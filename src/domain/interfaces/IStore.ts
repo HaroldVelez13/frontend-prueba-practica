@@ -5,3 +5,17 @@ export interface IStore {
     address: string,
     products?: string[]
 }
+
+export interface IStoresResponse {
+    status: string;
+    data: {
+        stores: IStore[];
+    };
+}
+
+export interface IStoreResponse {
+    status: string;
+    data: {
+        store: IStore;
+    };
+}

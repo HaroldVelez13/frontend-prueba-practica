@@ -1,3 +1,4 @@
+import AppBarHeader from "@/components/atoms/AppBarHeader";
 import { Box } from "@mui/material";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -18,7 +19,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
-        <Box sx={{ p: 5 }}>{children}</Box>
+        <AppBarHeader />
+        <Box sx={{ p: 3 }}>{children}</Box>
       </body>
     </html>
   );

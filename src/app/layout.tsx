@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Box sx={{ p: 5 }}>{children}</Box>
+      </body>
     </html>
   );
 }
